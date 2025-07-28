@@ -3,8 +3,8 @@ import joblib
 import numpy as np
 import matplotlib.pyplot as plt
 
-model = joblib.load('C:/Users/Admin/Desktop/Investigate app/portfolio_model.pkl')
-label_encoders = joblib.load('C:/Users/Admin/Desktop/Investigate app/label_encoders.pkl')  # <- updated
+model = joblib.load('portfolio_model.pkl')
+label_encoders = joblib.load('label_encoders.pkl')
 
 # header
 st.set_page_config(page_title="Investment Recommender")
