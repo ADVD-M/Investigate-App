@@ -938,6 +938,11 @@ with st.sidebar:
 
 _active_tickers = st.session_state.confirmed_tickers
 md       = load_data(_active_tickers, period_years, force)
+
+if len(md.trading_days) == 0:
+    st.error("🚨 **Data Download Failed:** Yahoo Finance returned empty data for all selected assets. This usually happens during temporary Yahoo Finance API outages or if the assets are delisted. Please try again later or select different assets.")
+    st.stop()
+
 frontier = compute_frontier(md, rfr, tickers=_active_tickers)
 # Use _pool for labels so custom tickers (not in ALL_ASSETS) get their ticker as the label
 labels   = {t: _pool.get(t, t) for t in md.tickers}

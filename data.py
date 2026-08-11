@@ -17,6 +17,7 @@ from datetime import datetime, timedelta
 
 import pandas as pd
 import yfinance as yf
+import requests
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
@@ -348,6 +349,16 @@ def _read_timestamp() -> datetime:
 
 # ── Fetch helpers ─────────────────────────────────────────────────────────────
 
+def _get_yf_session() -> requests.Session:
+    """Return a custom requests session with a realistic browser User-Agent
+    to bypass Yahoo Finance rate-limiting on cloud platforms (e.g., Streamlit)."""
+    session = requests.Session()
+    session.headers.update({
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    })
+    return session
+
+
 def _fetch_prices(tickers: list[str], period_years: int) -> pd.DataFrame:
     """
     Download adjusted close prices from Yahoo Finance.
@@ -365,6 +376,7 @@ def _fetch_prices(tickers: list[str], period_years: int) -> pd.DataFrame:
         auto_adjust = True,
         progress    = False,
         threads     = True,
+        session     = _get_yf_session(),
     )
 
     if isinstance(raw.columns, pd.MultiIndex):
@@ -387,6 +399,7 @@ def _fetch_benchmark(period_years: int) -> pd.Series:
         end         = end.strftime("%Y-%m-%d"),
         auto_adjust = True,
         progress    = False,
+        session     = _get_yf_session(),
     )
     return raw["Close"].squeeze().rename(BENCHMARK_TICKER)
 

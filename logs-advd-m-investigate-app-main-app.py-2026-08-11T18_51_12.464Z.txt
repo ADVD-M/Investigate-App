@@ -1,0 +1,301 @@
+
+[     UTC     ] Logs for investigate.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[18:50:25] 🚀 Starting up repository: 'investigate-app', branch: 'main', main module: 'app.py'
+[18:50:25] 🐙 Cloning repository...
+[18:50:26] 🐙 Cloning into '/mount/src/investigate-app'...
+
+[18:50:26] 🐙 Cloned repository!
+[18:50:26] 🐙 Pulling code changes from Github...
+[18:50:26] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.11.15 environment at /home/adminuser/venv
+Resolved 62 packages in 712ms
+Prepared 62 packages in 6.14s
+Uninstalled 1 package in 119ms
+Installed 62 packages in 542ms
+ + altair==5.5.0
+ + attrs==26.1.0
+ + beautifulsoup4==4.15.0
+ + blinker==[2026-08-11 18:50:34.209938] 1.9.0
+ + cachetools==5.5.2
+ + certifi==2026.7.22
+ [2026-08-11 18:50:34.210149] + cffi==2.1.1
+ + charset-normalizer==3.4.9
+ + clarabel==0.11.1
+ + click[2026-08-11 18:50:34.210276] ==8.4.2
+ + cvxpy==1.7.5
+ + frozendict==2.4.7
+ + gitdb==4.0.12[2026-08-11 18:50:34.210437] 
+ + gitpython==3.1.59
+ + html5lib==1.1
+ + idna[2026-08-11 18:50:34.210627] ==3.18
+ + jinja2==3.1.6
+ + joblib==1.5.3[2026-08-11 18:50:34.210842] 
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ [2026-08-11 18:50:34.211105] + lxml==6.1.1
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ +[2026-08-11 18:50:34.211325]  mdurl==0.1.2
+ + multitasking==0.0.13
+ + narwhals==2.24.0[2026-08-11 18:50:34.211507] 
+ + numpy==1.26.4
+ + osqp==1.1.3[2026-08-11 18:50:34.211657] 
+ + packaging==24.2
+ + pandas==2.2.2
+ + peewee==4.3.0
+ + pillow==10.4.0
+ + platformdirs==4.11.2[2026-08-11 18:50:34.211907] 
+ + plotly==5.22.0
+ + protobuf==5.29.6
+ + pyarrow==25.0.1
+ + pycparser==3.0
+ + pydeck==0.9.3
+ + pygments==2.20.0[2026-08-11 18:50:34.212235] 
+ + pyportfolioopt==1.5.5
+ + python-dateutil==2.9.0.post0
+ + pytz==[2026-08-11 18:50:34.212363] 2026.3.post1
+ + referencing==0.37.0
+ + requests==2.34.2
+ + rich==13.9.4
+ + rpds-py==[2026-08-11 18:50:34.212481] 2026.6.3
+ + scipy==1.17.1
+ + scs==3.2.11
+ - setuptools==83.0.0
+ + setuptools==84.0.0
+ [2026-08-11 18:50:34.212597] + six==1.17.0
+ + smmap==5.0.3
+ + soupsieve==2.9.2
+ + [2026-08-11 18:50:34.212759] streamlit==1.36.0
+ + tenacity==8.5.0
+ + toml==0.10.2
+ + tornado==6.5.8[2026-08-11 18:50:34.212884] 
+ + typing-extensions==4.16.0
+ + tzdata==2026.3
+ + urllib3==2.7.0[2026-08-11 18:50:34.212996] 
+ + watchdog==4.0.2
+ + webencodings==0.5.1
+ + yfinance==0.2.40
+Checking if Streamlit is installed
+Found Streamlit version 1.36.0 in the environment
+Detected pyarrow 25.0.1 (known segfault, apache/arrow#50471). Replacing with pyarrow<25.
+Using uv pip install.
+Using Python 3.11.15 environment at /home/adminuser/venv
+Resolved 1 package in 47ms
+Prepared 1 package in 687ms
+Uninstalled 1 package in 17ms
+Installed 1 package in 21ms
+ - pyarrow[2026-08-11 18:50:36.882324] ==25.0.1
+ + pyarrow==24.0.0
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.11.15 environment at /home/adminuser/venv
+Audited 1 package in 2ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[18:50:38] 🐍 Python dependencies were installed from /mount/src/investigate-app/requirements.txt using uv.
+Check if streamlit is installed
+Streamlit is already installed
+[18:50:39] 📦 Processed dependencies!
+
+
+
+INFO | Portfolio DB ready at /mount/src/investigate-app/portfolios.db
+INFO | Fetching 10 tickers from Yahoo Finance (5-year window)...
+INFO | Failed to create TzCache, reason: Error creating TzCache folder: '/home/appuser/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/appuser/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+INFO | Failed to create TzCache, reason: Error creating TzCache folder: '/home/appuser/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/appuser/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+INFO | Failed to create TzCache, reason: Error creating TzCache folder: '/home/appuser/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/appuser/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+INFO | Failed to create TzCache, reason: Error creating TzCache folder: '/home/appuser/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/appuser/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+INFO | Failed to create TzCache, reason: Error creating TzCache folder: '/home/appuser/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/appuser/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+INFO | Failed to create TzCache, reason: Error creating TzCache folder: '/home/appuser/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/appuser/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+ERROR | Failed to get ticker 'LT.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'LIQUIDBEES.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'HDFCBANK.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'HINDUNILVR.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'TCS.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'GOLDBEES.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'NIFTYBEES.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'SUNPHARMA.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'RELIANCE.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | Failed to get ticker 'INFY.NS' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | 
+10 Failed downloads:
+ERROR | ['LT.NS', 'LIQUIDBEES.NS', 'HDFCBANK.NS', 'HINDUNILVR.NS', 'TCS.NS', 'NIFTYBEES.NS', 'GOLDBEES.NS', 'SUNPHARMA.NS', 'RELIANCE.NS', 'INFY.NS']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+INFO | Fetching benchmark (^NSEI)...
+ERROR | Failed to get ticker '^NSEI' reason: Expecting value: line 1 column 1 (char 0)
+ERROR | 
+1 Failed download:
+ERROR | ['^NSEI']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+INFO | Data cached to 'data_cache'.
+/home/adminuser/venv/lib/python3.11/site-packages/numpy/lib/function_base.py:520: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/home/adminuser/venv/lib/python3.11/site-packages/numpy/core/_methods.py:121: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+/home/adminuser/venv/lib/python3.11/site-packages/pandas/core/frame.py:11211: RuntimeWarning: Degrees of freedom <= 0 for slice
+  base_cov = np.cov(mat.T, ddof=ddof)
+/home/adminuser/venv/lib/python3.11/site-packages/numpy/lib/function_base.py:2748: RuntimeWarning: divide by zero encountered in divide
+  c *= np.true_divide(1, fact)
+/home/adminuser/venv/lib/python3.11/site-packages/numpy/lib/function_base.py:2748: RuntimeWarning: invalid value encountered in multiply
+  c *= np.true_divide(1, fact)
+INFO | Market data ready: 10 assets, 0 trading days (0.0 years)
+INFO | Computing efficient frontier for 10 assets (risk-free rate: 6.50%)...
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.11/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:589 in _run_script                                      
+                                                                                
+  /mount/src/investigate-app/app.py:941 in <module>                             
+                                                                                
+     938                                                                        
+     939 _active_tickers = st.session_state.confirmed_tickers                   
+     940 md       = load_data(_active_tickers, period_years, force)             
+  ❱  941 frontier = compute_frontier(md, rfr, tickers=_active_tickers)          
+     942 # Use _pool for labels so custom tickers (not in ALL_ASSETS) get thei  
+     943 labels   = {t: _pool.get(t, t) for t in md.tickers}                    
+     944                                                                        
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/streamlit/runtime/caching/  
+  cache_utils.py:168 in wrapper                                                 
+                                                                                
+    165 │                                                                       
+    166 │   @functools.wraps(info.func)                                         
+    167 │   def wrapper(*args, **kwargs):                                       
+  ❱ 168 │   │   return cached_func(*args, **kwargs)                             
+    169 │                                                                       
+    170 │   # Give our wrapper its `clear` function.                            
+    171 │   # (This results in a spurious mypy error that we suppress.)         
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/streamlit/runtime/caching/  
+  cache_utils.py:197 in __call__                                                
+                                                                                
+    194 │   │                                                                   
+    195 │   │   if self._info.show_spinner or isinstance(self._info.show_spinn  
+    196 │   │   │   with spinner(message, _cache=True):                         
+  ❱ 197 │   │   │   │   return self._get_or_create_cached_value(args, kwargs)   
+    198 │   │   else:                                                           
+    199 │   │   │   return self._get_or_create_cached_value(args, kwargs)       
+    200                                                                         
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/streamlit/runtime/caching/  
+  cache_utils.py:224 in _get_or_create_cached_value                             
+                                                                                
+    221 │   │   │   return self._handle_cache_hit(cached_result)                
+    222 │   │   except CacheKeyNotFoundError:                                   
+    223 │   │   │   pass                                                        
+  ❱ 224 │   │   return self._handle_cache_miss(cache, value_key, func_args, fu  
+    225 │                                                                       
+    226 │   def _handle_cache_hit(self, result: CachedResult) -> Any:           
+    227 │   │   """Handle a cache hit: replay the result's cached messages, an  
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/streamlit/runtime/caching/  
+  cache_utils.py:280 in _handle_cache_miss                                      
+                                                                                
+    277 │   │   │   with self._info.cached_message_replay_ctx.calling_cached_f  
+    278 │   │   │   │   self._info.func, self._info.allow_widgets               
+    279 │   │   │   ):                                                          
+  ❱ 280 │   │   │   │   computed_value = self._info.func(*func_args, **func_kw  
+    281 │   │   │                                                               
+    282 │   │   │   # We've computed our value, and now we need to write it ba  
+    283 │   │   │   # along with any "replay messages" that were generated dur  
+                                                                                
+  /mount/src/investigate-app/app.py:375 in compute_frontier                     
+                                                                                
+     372 │   """tickers is included in the cache key so the frontier invalidat  
+     373 │   the asset selection changes. _md is excluded (unhashable) but tic  
+     374 │   gives Streamlit a stable, hashable proxy for the market data."""   
+  ❱  375 │   return get_efficient_frontier(_md, n_points=n, risk_free_rate=rfr  
+     376                                                                        
+     377                                                                        
+     378 @st.cache_data(show_spinner="Running backtest…")                       
+                                                                                
+  /mount/src/investigate-app/optimize.py:190 in get_efficient_frontier          
+                                                                                
+    187 │                                                                       
+    188 │   # ── Frontier sweep (UNCONSTRAINED) — for the chart curve ────────  
+    189 │   # Stays unconstrained so the chart always shows the true theoretic  
+  ❱ 190 │   frontier_points = _sweep_frontier(mu, S, risk_free_rate, n_points)  
+    191 │                                                                       
+    192 │   # ── Min Volatility (unconstrained — mathematical minimum risk) ──  
+    193 │   ef_minvol = _build_ef(mu, S)                                        
+                                                                                
+  /mount/src/investigate-app/optimize.py:114 in _sweep_frontier                 
+                                                                                
+    111 │   """                                                                 
+    112 │   # Find the min and max feasible returns for the sweep range         
+    113 │   ef_min = _build_ef(mu, S)                                           
+  ❱ 114 │   ef_min.min_volatility()                                             
+    115 │   min_ret, _, _ = ef_min.portfolio_performance(verbose=False)         
+    116 │                                                                       
+    117 │   max_ret = float(mu.max())  # can't exceed highest individual asset  
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/pypfopt/efficient_frontier  
+  /efficient_frontier.py:193 in min_volatility                                  
+                                                                                
+    190 │   │   :return: asset weights for the volatility-minimising portfolio  
+    191 │   │   :rtype: OrderedDict                                             
+    192 │   │   """                                                             
+  ❱ 193 │   │   self._objective = objective_functions.portfolio_variance(       
+    194 │   │   │   self._w, self.cov_matrix                                    
+    195 │   │   )                                                               
+    196 │   │   for obj in self._additional_objectives:                         
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/pypfopt/objective_function  
+  s.py:70 in portfolio_variance                                                 
+                                                                                
+     67 │   :return: value of the objective function OR objective function exp  
+     68 │   :rtype: float OR cp.Expression                                      
+     69 │   """                                                                 
+  ❱  70 │   variance = cp.quad_form(w, cov_matrix)                              
+     71 │   return _objective_value(w, variance)                                
+     72                                                                         
+     73                                                                         
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/cvxpy/atoms/quad_form.py:2  
+  50 in quad_form                                                               
+                                                                                
+    247 │   elif P.is_constant():                                               
+    248 │   │   if assume_PSD:                                                  
+    249 │   │   │   P = psd_wrap(P)                                             
+  ❱ 250 │   │   return QuadForm(x, P)                                           
+    251 │   else:                                                               
+    252 │   │   raise Exception(                                                
+    253 │   │   │   "At least one argument to quad_form must be non-variable."  
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/cvxpy/atoms/quad_form.py:4  
+  0 in __init__                                                                 
+                                                                                
+     37 │                                                                       
+     38 │   def __init__(self, x, P) -> None:                                   
+     39 │   │   """Atom representing :math:`x^T P x`."""                        
+  ❱  40 │   │   super(QuadForm, self).__init__(x, P)                            
+     41 │                                                                       
+     42 │   def numeric(self, values):                                          
+     43 │   │   prod = values[1].dot(values[0])                                 
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/cvxpy/atoms/atom.py:50 in   
+  __init__                                                                      
+                                                                                
+     47 │   │   │   )                                                           
+     48 │   │   # Convert raw values to Constants.                              
+     49 │   │   self.args = [Atom.cast_to_const(arg) for arg in args]           
+  ❱  50 │   │   self.validate_arguments()                                       
+     51 │   │   self._shape = self.shape_from_args()                            
+     52 │   │   if not s.ALLOW_ND_EXPR and len(self._shape) > 2:                
+     53 │   │   │   raise ValueError("Atoms must be at most 2D.")               
+                                                                                
+  /home/adminuser/venv/lib/python3.11/site-packages/cvxpy/atoms/quad_form.py:5  
+  6 in validate_arguments                                                       
+                                                                                
+     53 │   │   if self.args[1].shape[1] != n or self.args[0].shape not in [(n  
+     54 │   │   │   raise ValueError("Invalid dimensions for arguments to quad  
+     55 │   │   if not self.args[1].is_hermitian():                             
+  ❱  56 │   │   │   raise ValueError("Quadratic form matrices must be symmetri  
+     57 │                                                                       
+     58 │   def sign_from_args(self) -> Tuple[bool, bool]:                      
+     59 │   │   """Returns sign (is positive, is negative) of the expression.   
+────────────────────────────────────────────────────────────────────────────────
+ValueError: Quadratic form matrices must be symmetric/Hermitian.
