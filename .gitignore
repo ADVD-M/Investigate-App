@@ -1,6 +1,48 @@
-.venv/
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Streamlit
+.streamlit/
+
+# Database and Caches
+*.db
+*.sqlite3
+portfolios.db
+data_cache/
+
+# IDEs and Tools
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+.pytest_cache/
+.coverage
+htmlcov/
 .ipynb_checkpoints/
-*.pyc
-*.pyo
-*.DS_Store
