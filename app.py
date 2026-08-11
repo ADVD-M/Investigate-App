@@ -939,7 +939,7 @@ with st.sidebar:
 _active_tickers = st.session_state.confirmed_tickers
 md       = load_data(_active_tickers, period_years, force)
 
-if len(md.trading_days) == 0:
+if len(md.prices) == 0:
     st.error("🚨 **Data Download Failed:** Yahoo Finance returned empty data for all selected assets. This usually happens during temporary Yahoo Finance API outages or if the assets are delisted. Please try again later or select different assets.")
     st.stop()
 
