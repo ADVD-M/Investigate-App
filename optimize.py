@@ -20,7 +20,7 @@ from collections import namedtuple
 
 import numpy as np
 import pandas as pd
-from pypfopt import EfficientFrontier, expected_returns, risk_models, plotting
+from pypfopt import EfficientFrontier, expected_returns, risk_models
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
